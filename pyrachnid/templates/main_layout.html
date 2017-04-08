@@ -6,9 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title -%}{%- endblock %}</title>
 
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/lib/skeleton.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/lib/normalize.css') }}">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+  {% assets "js_all" %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+  {% endassets %}
+  {% assets "css_all" %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}">
+  {% endassets %}
 </head>
 
 <body>

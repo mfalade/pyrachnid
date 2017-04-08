@@ -1,2 +1,5 @@
 flask
 Flask-Script
+Flask-Assets
+jsmin
+cssmin
