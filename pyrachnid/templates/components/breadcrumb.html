@@ -1,0 +1,9 @@
+<h5 class="grey">
+{% if context and context.action %}
+	<a class="undecorated" href="{{ url_for('main.home')}}">
+		rrscraper
+	</a> > add new site > {{ context.action }}
+{% else %}
+	Welcome to rrscraper
+{% endif %}
+</h5>

@@ -1,0 +1,113 @@
+.center {
+	margin: 0 auto;
+}
+
+.tac {
+	text-align: center;	
+}
+
+.mts {
+	margin-top: 15px;
+}
+
+.mtm {
+	margin-top: 30px;
+}
+
+.mtl {
+	margin-top: 50px;
+}
+
+.mtxl {
+	margin-top: 80px;
+}
+
+.mtxxl {
+	margin-top: 150px;
+}
+
+a.button {
+	padding-top: 15px;
+}
+
+input.input,
+a.button,
+input.button {
+	height: 70px;
+	border-radius: 0;	
+}
+
+input.input {
+	font-size: 2rem;
+	font-style: italic;
+	text-align: center;
+}
+
+a.button,
+input.button  {
+	width: 100%;
+	text-transform: none;
+	font-size: 1.6rem;
+	font-weight: 200;
+	color: #FFF!important;
+	border-radius: 0!important;
+	background-color: #919191!important;
+	border-color: #919191!important;
+	transition: all ease .25s!important;
+}
+
+.one-half-width {
+	width: 50%!important;
+}
+
+.one-quarter-width {
+	width: 25%!important;
+}
+
+.one-third-width {
+	width: 33%!important;
+}
+
+a.undecorated,
+.grey
+ {
+	text-decoration: none;
+	color: #BFBFBF;
+}
+
+.grey a:hover {
+	color: #919191;
+}
+
+
+::-webkit-input-placeholder {
+   text-align: center;
+   color: #BFBFBF;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+   color: #BFBFBF;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+   color: #BFBFBF;
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+   color: #BFBFBF;
+}
+
+
+input[type="email"]:focus, 
+input[type="number"]:focus, 
+input[type="search"]:focus, 
+input[type="text"]:focus, 
+input[type="tel"]:focus, 
+input[type="url"]:focus, 
+input[type="password"]:focus, 
+textarea:focus, select:focus {
+	border: 1px solid #919191;
+}

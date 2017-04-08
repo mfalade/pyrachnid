@@ -1,0 +1,18 @@
+{% extends 'main_layout.html' %}
+
+{% block breadcrumb %}
+  {% include 'components/breadcrumb.html' %}
+{% endblock %}
+
+{% block page_prompt %}
+  <h5>What would you like to do?</h5>
+{% endblock %}
+
+{% block page_form %}
+  <div class="six columns">
+    <a class="button jumboButton" href="{{ url_for('main.add_new_site') }}">Add new site</a>
+  </div>
+  <div class="six columns">
+    <a class="button jumboButton" href="{{ url_for('main.view_existing_site') }}">View existing site</a>
+  </div>
+{% endblock %}

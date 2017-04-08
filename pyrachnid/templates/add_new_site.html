@@ -1,0 +1,18 @@
+{% extends 'main_layout.html' %}
+
+{% block breadcrumb %}
+	  {% include 'components/breadcrumb.html' %}
+{% endblock %}
+
+{% block page_prompt %}
+  <h5>What is the domain of the website you want to scrape?</h5>
+{% endblock %}
+
+{% block page_form %}
+	<form action="">
+		<div class="twelve columns">
+			<input class="u-full-width input" type="url" placeholder="Ex. https://store.com" id="setDomain">
+			<input class="button mtm one-third-width" type="submit" value="Next">
+		</div>
+	</form>
+{% endblock %}
