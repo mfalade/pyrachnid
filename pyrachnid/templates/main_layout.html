@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title -%}{%- endblock %}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title -%}{%- endblock %}</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/lib/skeleton.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/lib/normalize.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/lib/skeleton.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/lib/normalize.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
 </head>
+
 <body>
-    <div class="">
-        {% block content %}
-        <div class="container">
-            <div class="row">
-                <div class="half column">
-                    <section class="mtm">
+  <div class="">
+    {% block content %}
+    <div class="container">
+      <div class="row">
+        <div class="half column">
+          <section class="mtm">
 
-                        {% block breadcrumb %}{% endblock %}
+            {% block breadcrumb %}{% endblock %}
 
-                        <div class="tac center mtxxl">
-                            <form>
-                                {% block page_prompt %}{% endblock %}
-                                <div class="row mtm">
-                                    {% block page_form %}{% endblock %}
-                                </div>
-                            </form>
-                        </div>
-
-                    </section>
+            <div class="tac center mtxxl">
+              <form>
+                {% block page_prompt %}{% endblock %}
+                <div class="row mtm">
+                  {% block page_form %}{% endblock %}
                 </div>
+              </form>
             </div>
+
+          </section>
         </div>
-        
-        {% endblock %}
+      </div>
     </div>
+
+    {% endblock %}
+  </div>
 </body>
+
 </html>
